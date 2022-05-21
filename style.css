@@ -1,0 +1,154 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background: url("backgroundbgmi.png");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.div1 {
+    margin: 2.5rem 0 0 10rem;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 2rem 0;
+}
+
+fieldset {
+    background-color: transparent;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 50%;
+    border-radius: 10px;
+    padding: 10px;
+    color: #FF4C29;
+    border: 5px solid #FF4C29;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+legend {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.h1 {
+    font-family: "Sofia", sans-serif;
+    color: red;
+    text-align: center;
+}
+
+.input {
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-bottom: 1px solid #FF4C29;
+    outline: none;
+    background-color: transparent;
+}
+
+input:focus::-webkit-input-placeholder {
+    font-size: .75em;
+    position: relative;
+    top: -15px;
+    transition: 0.2s ease-out;
+    font-weight: 600;
+    color: #000 !important;
+}
+
+input::-webkit-input-placeholder {
+    transition: 0.2s ease-in;
+    font-weight: 600;
+}
+
+input[type="text"]:focus {
+    height: 50px;
+    padding-bottom: 0px;
+    transition: 0.2s ease-in;
+}
+
+input[type="text"] {
+    height: 50px;
+    transition: 0.2s ease-in;
+}
+
+
+input[type=button], input[type="reset"] {
+    border-radius: 10px;
+    border: none;
+    padding: 12px 20px;
+    margin-right: 10px;
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #FF4C29;
+}
+
+input[type=reset] {
+    float: right;
+}
+
+input[type=button]:hover {
+    background-color: #FF4C29;
+    color: #fff;
+}
+
+input[type=reset]:hover {
+    background-color: #FF4C29;
+    color: #fff;
+}
+
+img {
+    display: block;
+    width: 50%;
+    margin: 1rem auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #000;
+}
+
+.note {
+    font-size: 1rem;
+    margin: 1rem 0;
+}
+
+/* media queries section */
+
+@media screen and (max-width:700px) {
+    fieldset {
+        width: 100%;
+        float: none;
+        margin-bottom: 20px;
+    }
+
+    .input {
+        width: 100%;
+    }
+
+    form {
+        width: 100%;
+        margin: 1rem 0;
+    }
+
+    .div1 {
+        margin: 0rem 1rem;
+    }
+
+    .h1 {
+        font-size: 1.5rem;
+        font-weight: 900;
+        text-shadow: 0px 0px 8px #FF4C29;
+    }
+}
