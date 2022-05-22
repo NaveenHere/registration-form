@@ -16,7 +16,7 @@ const send_button = document.getElementById("send");
 
 // to send the message via whatsapp
 send_button.addEventListener("click", () => {
-  link = `https://api.whatsapp.com/send/?phone=919971849074&text=Name+:+*${team_name.value.replace(
+  link = `https://api.whatsapp.com/send/?phone=919971849074&text=Team+Name+:+*${team_name.value.replace(
     / /g,
     "+"
   )}*+Player+1+:+*${player_1.value}*+Player+2+:+*${
