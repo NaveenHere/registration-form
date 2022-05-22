@@ -19,25 +19,28 @@
                 <legend><em>Register Your Team</em></legend>
 
 
-                <input type="text" name="team" class="input" required placeholder="Your Team Name"><br><br>
+                <input type="text" id="team" name="team" class="input" required placeholder="Your Team Name"><br><br>
 
-                <input type="text" name="player1" class="input" required
+                <input type="text" id="player1" name="player1" class="input" required
                     placeholder="1st Player Name & ID (Team Leader)"><br><br>
 
-                <input type="text" name="player2" class="input" required
+                <input type="text" id="player2" name="player2" class="input" required
                     placeholder="2nd Player Name & ID"><br><br>
 
-                <input type="text" name="player3" class="input" required
+                <input type="text" id="player3" name="player3" class="input" required
                     placeholder="3rd Player Name & ID"><br><br>
 
-                <input type="text" name="player4" class="input" required
+                <input type="text" id="player4" name="player4" class="input" required
                     placeholder="4th Player Name & ID"><br><br>
 
-                <input type="email" name="mail" class="input" required
+                <input type="email" id="mail" name="mail" class="input" required
                     placeholder="Email Address (Team Leader)"><br><br>
 
-                <input type="tel" name="phone" class="input" required
+                <input type="number" id="phone" name="phone" class="input" required
                     placeholder="Phone Number (Team Leader)"><br><br>
+
+                <input type="number" id="aadhar" name="aadhar" class="input" required min="12" max="12"
+                    placeholder="Aadhar No. (Team Leader)"><br><br>
 
                 <div>
                     <p class="note">Note:- Charges are ₹80 per person. Attach a payment screenshot in this form. If
@@ -46,12 +49,12 @@
                     <img src="portfolio.jpg" alt="">
                 </div>
 
-                <input type="submit" value="Send">
+                <input type="submit" id="send" value="Send">
                 <input type="reset" value="Reset">
             </fieldset>
         </form>
     </div>
 
 </body>
-
+    <script src="main.js"></script>
 </html>
